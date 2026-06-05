@@ -1,3 +1,8 @@
+# Create a program that calculates the price and perimeter of a fence
+# Author: Joshua Greening
+# 5 June 2026
+# Version 1
+
 # Ask user for width and height, loop the program until they
 # Enter a number that is more than zero
 def num_check(question):
@@ -34,6 +39,7 @@ while loop == "":
     print()
 
     Length = num_check("What is the length?   ")
+    print()
     print(f"{Length} m")
 
     print()
@@ -43,13 +49,23 @@ while loop == "":
     print(f"${Cost} / meter")
     print()
 
+# Calcutation of Perimeter
+
+    perimeter = 2 * (Width + Length)
+    Cost = Cost * perimeter
+
 # calculation of fence cost
+
     fence_cost = 2 * (Length+Width) * Cost
+
 # output
+    
+    print(f"Perimeter: {perimeter} meters")
+    print()
     print(f"The total cost of your fence is ${fence_cost}0")
+    print()
 # asks if user wishes to make another calculation
     loop = input("Press <enter> if you wish to make another calculation or exit to quit.")
-    print()
     print()
     print()
 
